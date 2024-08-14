@@ -23,7 +23,7 @@ Create a PDF report on the request made to the files including(file name,sheet n
 
 
 ## Functions
-#### create_pdf_report(report):  
+####  convert_to_pdf(report):  
 Generate a PDF report based on the processed data.  
 
 #### count_sheets_in_excel_file(file_path):  

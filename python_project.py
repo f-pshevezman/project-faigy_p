@@ -54,10 +54,10 @@ def build_report(data):
                 column_data = [cell.value for cell in ws[column]]
                 result = sum([value for value in column_data if isinstance(value, (int, float))])/len(column_data)
                 report_data.append({"sheetname": sheet_name, "column": column, "average": result})
-    pdf_function(report_data)
+    convert_to_pdf(report_data)
     jsonify(report_data)
     return ''
-def pdf_function(report):
+def convert_to_pdf(report):
     pdf_file = "output.pdf"
     width, height = pagesizes.A4
 
